@@ -26,7 +26,7 @@
 
     <header>
       <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-	      <h4 class="display-7">HQ Data Profiler: Understand Data Profiling Results <br/>(Data Quality Analysis)</h4>
+	      <h4 class="display-7">HQ Data Profiler: Understand Data Profiling Results</h4>
       </div>
     </header>
 
@@ -34,14 +34,14 @@
       <div class="px-4 pt-2 mb-2">
 
 	      Data profiling is an essential process in any data quality workflow. It provides insights into the structure, completeness, and quality of your dataset, allowing you to address issues before proceeding with analysis.<br/><br/>
-	      <b>HQ Data Profiler</b> takes this a step further by offering detailed results and versatile options to quickly and easily gain these insights. With many data formats supported, include <b>CSV</b>, <b>Excel</b>, <b>JSON</b>, <b>JSON line</b>, <b>Parquet</b>, and <b>XML</b>, HQ Data Profiler ensures that your data insights are just a few clicks away.<br/><br/>
+	      <b>HQ Data Profiler</b> takes this a step further by offering a fast and versatile workflow to quickly and easily gain these insights. With many data formats supported, include <b>CSV</b>, <b>Excel</b>, <b>JSON</b>, <b>JSON line</b>, <b>Parquet</b>, and <b>XML</b>, HQ Data Profiler ensures that your data insights are just a few clicks away.<br/><br/>
 
 
-In this blog post, we’ll dive deeper into the output metrics of the HQ Data Profiler, explaining what they mean and how to use them effectively. We’ll also explore how you can save and share profiling results in various formats, ensuring seamless integration into your workflow.<br/><br/>
+Let's dive into the output metrics of the HQ Data Profiler, explaining what they mean and how to use them effectively. We’ll also explore how you can save and share profiling results in various formats.<br/><br/>
 
 
 <div class="text-center">
-	<b>Why Data Profiling Results Matter</b><br/><br/>
+	<b>Why Data Profiling Results Matter:</b><br/><br/>
 </div>
 
 
@@ -51,45 +51,47 @@ Understanding the output of a data profiling tool like HQ Data Profiler is cruci
 3. <b>Informed Decision-Making</b>: Gaining insights that guide ingestion and merging.<br/>
 <br/>
 
-The <b>HQ Data Profiler</b> organizes its output into an intuitive profile view that is easy to understand.<br/><br/>
+The <b>HQ Data Profiler</b> organizes its profile into a single screen that is easy to understand.<br/><br/>
 
 
 <div class="text-center">
-	<b>Key Metrics in HQ Data Profiler Output</b><br/><br/>
+	<b>HQ Data Profiler Output:</b><br/><br/>
 </div>
 
 
-Once your data is profiled, the tool displays a table with the metrics calculated for each field:<br/><br/>
+Once your data is profiled, the profile output is displayed in a table with the metrics calculated for each field (a.k.a. column):<br/><br/>
 
           <div class="container ">
 		  <img src="blog1_data_profile_output.png" class="img-fluid border rounded-3 py-3 px-2 shadow-sm mb-5" loading="lazy"></img>
           </div>
 
+<div class="text-center">
+	<b>Metrics:</b><br/><br/>
+</div>
 
-<b>Metrics:</b><br/>
-- <b>Column name</b>: The name of the field in the dataset.<br/>
-- <b>Column type</b>: The data type of the field (string/number). Auto detected or modified.<br/>
-- <b>Total values</b>: Total number of values found in the field.<br/>
-- <b>Empty or null rows</b>: Number of empty or null values found in the field.<br/>
-- <b>Empty or null rows percent</b>: Percent of empty or null values for the field.<br/>
-- <b>Non empty or null rows</b>: Number of non empty or null values found in the field.<br/>
-- <b>Non empty or null rows percent</b>: Percent of not empty or null values in the field.<br/>
-- <b>Unique values</b>: Number of unique values found in the field.<br/>
-- <b>Unique values percent</b>: Percent of values that are unique for the field.<br/>
-- <b>Duplicate values</b>: Number of duplicate values found in the field.<br/>
-- <b>Duplicate values percent</b>: Percent of values that are duplicates for the field.<br/>
-- <b>Distinct values</b>: Number of distinct values (values with no repititions) found in the field.<br/>
-- <b>Distinct values percent</b>: Percent of values that are distinct for the field.<br/>
-- <b>Min string value</b>: First string value (sorted alphabetically) in the field.<br/>
-- <b>Median string value</b>: Median string value (sorted alphabetically) in the field.<br/>
-- <b>Max string value</b>: Max string value (sorted alphabetically) in the field.<br/>
-- <b>Min string length</b>: First string length in the field.<br/>
-- <b>Median string length</b>: Median string length in the field.<br/>
-- <b>Max string length</b>: Max string length in the field.<br/>
-- <b>Min value</b>: Min value in the field.<br/>
-- <b>Median value</b>: Median value in the field.<br/>
-- <b>Max value</b>: Max value in the field.<br/>
-- <b>Top 10 values</b>: Top 10 values (or strings) by occurence in the field.<br/>
+<b>Column name</b>: The name of the field in the dataset.<br/>
+<b>Column type</b>: The data type of the field (string/number). Auto detected or modified.<br/>
+<b>Total values</b>: Total number of values found in the field.<br/>
+<b>Empty or null rows</b>: Number of empty or null values found in the field.<br/>
+<b>Empty or null rows percent</b>: Percent of empty or null values for the field.<br/>
+<b>Non empty or null rows</b>: Number of non empty or null values found in the field.<br/>
+<b>Non empty or null rows percent</b>: Percent of not empty or null values in the field.<br/>
+<b>Unique values</b>: Number of unique values found in the field.<br/>
+<b>Unique values percent</b>: Percent of values that are unique for the field.<br/>
+<b>Duplicate values</b>: Number of duplicate values found in the field.<br/>
+<b>Duplicate values percent</b>: Percent of values that are duplicates for the field.<br/>
+<b>Distinct values</b>: Number of distinct values (values with no repititions) found in the field.<br/>
+<b>Distinct values percent</b>: Percent of values that are distinct for the field.<br/>
+<b>Min string value</b>: First string value (sorted alphabetically) in the field.<br/>
+<b>Median string value</b>: Median string value (sorted alphabetically) in the field.<br/>
+<b>Max string value</b>: Max string value (sorted alphabetically) in the field.<br/>
+<b>Min string length</b>: First string length in the field.<br/>
+<b>Median string length</b>: Median string length in the field.<br/>
+<b>Max string length</b>: Max string length in the field.<br/>
+<b>Min value</b>: Min value in the field.<br/>
+<b>Median value</b>: Median value in the field.<br/>
+<b>Max value</b>: Max value in the field.<br/>
+<b>Top 10 values</b>: Top 10 values (or strings) by occurence in the field.<br/>
 
 <br/><br/>
 
@@ -98,7 +100,7 @@ Once your data is profiled, the tool displays a table with the metrics calculate
 
 
 <div class="text-center">
-	<b>Export and Save Features</b><br/><br/>
+	<b>Export and Save Features:</b><br/><br/>
 </div>
 
 <br/>
@@ -125,11 +127,11 @@ The <b>Copy to Clipboard</b> feature allows you to quickly copy specific results
 <br/><br/>
 
 <div class="text-center">
-	<b>Demonstration</b><br/><br/>
+	<b>Demonstration:</b><br/><br/>
 </div>
 
 
-For a complete demonstration of the HQ Data Profiler’s output metrics and export features, check out our YouTube video.<br/><br/>
+For a complete demonstration of the HQ Data Profiler’s profile output and export features, check out our YouTube video.<br/><br/>
 
 
 🔗 [<b>Watch Now:</b> HQ Data Profiler - Understand Data Profiling Results] (Demo video still in progress, coming soon!)<br/><br/>
@@ -161,7 +163,7 @@ Data profiling is a critical step in ensuring data quality, and the <b>HQ Data P
 Ready to take control of your data quality?<br/>
 - <b>Download HQ Data Profiler</b> today and try it on your datasets.<br/>
 - <b>Watch the YouTube demo</b> for a step-by-step guide.<br/>
-- <b>Contact us to share your experience</b> — we’d love to hear how this tool has streamlined your workflow!<br/>
+- <b>Contact us to share your experience</b> — we’d love to hear how this tool has helped your projects!<br/>
       </div>
     </main>
 
