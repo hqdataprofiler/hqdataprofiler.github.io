@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HQ Data Profiler data analysis and profiling tutorial (CSV/JSON/Excel/Other formats).">
+  <link rel="canonical" href="https://hqdataprofiler.com/tutorial-data-profiling-and-quality-analysis-for-json"/>
+  <title>Data Analysis & Profiling Tutorial - HQ Data Profiler</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Tutorial: Data Analysis & Profiling with HQ",
+    "author": {
+      "@type": "Person",
+      "name": "HQ Data Profiler"
+    },
+    "articleBody": "Ready to use <B>HQ Data Profiler</B> to analyze some data? Let&#39;s open the tool."
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header class="mb-4 border-bottom">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a href="https://hqdataprofiler.com" class="navbar-brand d-flex align-items-center mb-md-0 me-md-auto text-dark text-decoration-none">
+          <img class="bi me-2" alt="Data Quality Analyzer and Data Profiler Tool logo" width="40" height="40" role="img" src="logo.webp"></img>
+          <span class="fs-4"><b>HQ</b> Data Profiler</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a type="button" href="https://hqdataprofiler.com/about-us" class="nav-link me-3" style="background-color: #ffffff; color: #741b47ff;">About us</a>
+            </li>
+            <li class="nav-item active">
+              <a type="button" href="https://hqdataprofiler.com/learn" class="nav-link me-3" style="background-color: #ffffff; color: #741b47ff;">Learn</a>
+            </li>
+            <li class="nav-item active">
+              <a type="button" href="https://hqdataprofiler.com/free-data-tools" class="nav-link me-3" style="background-color: #ffffff; color: #741b47ff;">Free tools</a>
+            </li>
+            <li class="nav-item active">
+              <a type="button" href="https://shop.hqdataprofiler.com/billing" class="nav-link me-3" style="background-color: #ffffff; color: #741b47ff;">Manage subscription</a>
+             </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button class="btn me-2" style="background-color: #ffffff; color: #741b47ff; border-color: #741b47ff;" onclick="window.open('https://tool.hqdataprofiler.com','_blank')">Open HQ Data Profiler</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+
+
+
+
+    <header>
+      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+	      <h1 class="fw-normal">Tutorial: Data Analysis & Profiling with HQ</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="text-center px-4 mb-2">
+
+	      Ready to use <b>HQ Data Profiler</b> to analyze some data? Let's open the tool.<br/>
+
+		  <img alt="Data Profiler & Data Analysis Tool Main Screen" src="data_profiling_data_analysis_tool_main.webp" class="mb-4 img-fluid border" loading="lazy"></img>
+
+	      Click "Choose data file" and select the file. We will choose this JSON file, but <b>HQ Data Profiler</b> supports many other file types such as CSV, Excel, JSON, and XML:<br/>
+
+		  <img alt="Data Profiler & Data Analysis Tool File Selection Screen" src="selecting_json_file_for_analysis.webp" class="mb-4 img-fluid border" loading="lazy"></img>
+
+
+	      Now, we can see a preview of the file. <b>HQ Data Profiler</b> automatically handles arrays, nested fields, and other complex data formats:<br/>
+
+		  <img alt="Data Profiler & Data Analysis Tool File Data Preview Screen" src="analyzing_json_data_preview.webp" class="mb-4 img-fluid border" loading="lazy"></img>
+
+	      Scroll down to the bottom of the screen, and we can see the schema which was auto-detected and can be modified:<br/>
+
+		  <img alt="Data Profiler & Data Analysis Tool File Schema Selection Screen" src="data_analysis_file_schema.webp" class="mb-4 img-fluid border" loading="lazy"></img>
+
+	      Let's click the "profile" button to get metrics from our data:<br/>
+
+		  <img alt="Data Profiler & Data Analysis Tool Profiling Request Screen" src="data_profiling_json.webp" class="mb-4 img-fluid border" loading="lazy"></img>
+
+
+	      Many metrics for each field are calculated and displayed, such as the number of unique, duplicate, and distinct values and the min, median, max, and top 10 values:<br/>
+
+		  <img alt="Data Profiler & Data Analysis Tool Profile Data Quality Report Screen" src="json_metrics_min_max_unique_duplicate_median_top_values.webp" class="mb-4 img-fluid border" loading="lazy"></img>
+
+
+	      Let's go back and click the "analyze" button:<br/>
+
+		  <img alt="Data Profiler & Data Analysis Tool Analyze Selection Screen" src="json_data_analysis.webp" class="mb-4 img-fluid border" loading="lazy"></img>
+
+	      Each unique value for each field is displayed, sorted with machine learning to display values most likely to be outliers first.<br/>
+
+		  <img alt="Data Profiler & Data Analysis Tool Data Quality Analyze Outlier Screen" src="json_data_value_analysis_detect_outliers.webp" class="mb-4 img-fluid border" loading="lazy"></img>
+
+	      <b>HQ Data Profiler</b> does all processing securely and privately on your own device. Get started <a href="https://hqdataprofiler.com/#pricingAnchor" style="color: #741b47ff">today</a>.<br/>
+
+	      <br/>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="my-md-5 border-top">
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4">
+        <div class="mb-4">
+          <img class="mb-2" src="./logo.webp" alt="HQ Data Profiler logo" width="24" height="24">
+          <small class="d-block text-muted">© High Quality Profiling 2024</small>
+          <small class="link-secondary text-decoration-none mb-3">support@hqdataprofiler.com</small>
+        </div>
+
+	<ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="link-dark" href="https://www.youtube.com/@HQDataProfiler"><i class="bi-youtube"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="https://www.linkedin.com/company/hq-data-profiler/"><i class="bi-linkedin"></i></a>
+          </li>
+          <li class="ms-3">
+           <a class="link-dark" href="https://medium.com/@hqdataprofiler"><i class="bi-medium"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="https://x.com/HQDataProfiler"><i class="bi-twitter"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="https://www.threads.net/@hqdataprofiler"><i class="bi-threads"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="https://substack.com/@hqdataprofiler"><i class="bi-substack"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="https://www.peerspot.com/products/hq-data-profiler-reviews"><i class="bi-chat-left-text-fill"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="https://sourceforge.net/software/product/hq-data-profiler/"><i class="bi-sourceforge"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="https://www.producthunt.com/posts/hq-data-profiler/"><i class="bi-link-45deg"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="https://dataprofiler.org/"><i class="bi-link-45deg"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+ 
+
+
+
+  </div>
+
+</body>
+</html>

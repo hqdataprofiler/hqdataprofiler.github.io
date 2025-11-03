@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXFVLRGRMN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-TXFVLRGRMN');
+  </script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HQ Data Profiler output screens (data profile and data analysis) described and explained.">
+  <link rel="canonical" href="https://hqdataprofiler.com/understanding-data-profiling-results"/>
+  <title>Understanding Data Profiling Results - HQ Data Profiler</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Understand Data Profiling Results",
+    "author": {
+      "@type": "Person",
+      "name": "HQ Data Profiler"
+    },
+    "image": "https://hqdataprofiler.com/blog1_data_profile_output.webp",
+    "articleBody": "Let&#39;s dive into the output metrics of the HQ Data Profiler, explaining what they mean and how to use them effectively. We’ll also explore how you can save and share profiling results in various formats."
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header class="mb-4 border-bottom">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a href="https://hqdataprofiler.com" class="navbar-brand d-flex align-items-center mb-md-0 me-md-auto text-dark text-decoration-none">
+          <img class="bi me-2" alt="Data Quality Analyzer and Data Profiler Tool logo" width="40" height="40" role="img" src="logo.webp"></img>
+          <span class="fs-4"><b>HQ</b> Data Profiler</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a type="button" href="https://hqdataprofiler.com/about-us" class="nav-link me-3" style="background-color: #ffffff; color: #741b47ff;">About us</a>
+            </li>
+            <li class="nav-item active">
+              <a type="button" href="https://hqdataprofiler.com/learn" class="nav-link me-3" style="background-color: #ffffff; color: #741b47ff;">Learn</a>
+            </li>
+            <li class="nav-item active">
+              <a type="button" href="https://hqdataprofiler.com/free-data-tools" class="nav-link me-3" style="background-color: #ffffff; color: #741b47ff;">Free tools</a>
+            </li>
+            <li class="nav-item active">
+              <a type="button" href="https://shop.hqdataprofiler.com/billing" class="nav-link me-3" style="background-color: #ffffff; color: #741b47ff;">Manage subscription</a>
+             </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button class="btn me-2" style="background-color: #ffffff; color: #741b47ff; border-color: #741b47ff;" onclick="window.open('https://tool.hqdataprofiler.com','_blank')">Open HQ Data Profiler</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+
+
+
+
+    <header>
+      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+	      <h1 class="fw-normal">HQ Data Profiler: Understand Data Profiling Results</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="px-4 mb-2">
+
+	      Data profiling is an essential process in any data quality workflow. It provides insights into the structure, completeness, and quality of your dataset, allowing you to address issues before proceeding with analysis.<br/><br/>
+	      <b>HQ Data Profiler</b> takes this a step further by offering a fast and versatile workflow to quickly and easily gain these insights. With many data formats supported, include <b>CSV</b>, <b>Excel</b>, <b>JSON</b>, <b>JSON line</b>, <b>Parquet</b>, and <b>XML</b>, HQ Data Profiler ensures that your data insights are just a few clicks away.<br/><br/>
+
+
+Let's dive into the output metrics of the HQ Data Profiler, explaining what they mean and how to use them effectively. We’ll also explore how you can save and share profiling results in various formats.<br/><br/>
+
+
+<div class="text-center">
+	<b>Why Data Profiling Results Matter:</b><br/><br/>
+</div>
+
+
+Understanding the output of a data profiling tool like HQ Data Profiler is crucial for:<br/>
+1. <b>Identifying Errors</b>: Spotting fields with missing values, duplicate fields, and anomalies.<br/>
+2. <b>Improving Data Quality</b>: Addressing issues like misaligned schemas or outliers.<br/>
+3. <b>Informed Decision-Making</b>: Gaining insights that guide ingestion and merging.<br/>
+<br/>
+
+The <b>HQ Data Profiler</b> organizes its profile into a single screen that is easy to understand.<br/><br/>
+
+
+<div class="text-center">
+	<b>HQ Data Profiler Output:</b><br/><br/>
+</div>
+
+
+Once your data is profiled, the profile output is displayed in a table with the metrics calculated for each field (a.k.a. column):<br/><br/>
+
+		  <img alt="Data Profiler Tool Profiler Output Report Screen" src="blog1_data_profile_output.webp" class="mb-4 img-fluid border" loading="lazy"></img>
+
+<div class="text-center">
+	<b>Metrics:</b><br/><br/>
+</div>
+
+<b>Column name</b>: The name of the field in the dataset.<br/>
+<b>Column type</b>: The data type of the field (string/number). Auto detected or modified.<br/>
+<b>Total values</b>: Total number of values found in the field.<br/>
+<b>Empty or null rows</b>: Number of empty or null values found in the field.<br/>
+<b>Empty or null rows percent</b>: Percent of empty or null values for the field.<br/>
+<b>Non empty or null rows</b>: Number of non empty or null values found in the field.<br/>
+<b>Non empty or null rows percent</b>: Percent of not empty or null values in the field.<br/>
+<b>Unique values</b>: Number of unique values found in the field.<br/>
+<b>Unique values percent</b>: Percent of values that are unique for the field.<br/>
+<b>Duplicate values</b>: Number of duplicate values found in the field.<br/>
+<b>Duplicate values percent</b>: Percent of values that are duplicates for the field.<br/>
+<b>Distinct values</b>: Number of distinct values (values with no repititions) found in the field.<br/>
+<b>Distinct values percent</b>: Percent of values that are distinct for the field.<br/>
+<b>Min string value</b>: First string value (sorted alphabetically) in the field.<br/>
+<b>Median string value</b>: Median string value (sorted alphabetically) in the field.<br/>
+<b>Max string value</b>: Max string value (sorted alphabetically) in the field.<br/>
+<b>Min string length</b>: First string length in the field.<br/>
+<b>Median string length</b>: Median string length in the field.<br/>
+<b>Max string length</b>: Max string length in the field.<br/>
+<b>Min value</b>: Min value in the field.<br/>
+<b>Median value</b>: Median value in the field.<br/>
+<b>Max value</b>: Max value in the field.<br/>
+<b>Top 10 values</b>: Top 10 values (or strings) by occurence in the field.<br/>
+
+<br/><br/>
+
+<br/>
+
+
+
+<div class="text-center">
+	<b>Export and Save Features:</b><br/><br/>
+</div>
+
+<br/>
+
+Understanding your data is only half the battle. The <b>HQ Data Profiler</b> makes it easy to save and share your profiling results in multiple formats, ensuring that insights are accessible to all stakeholders. Let’s explore these options:<br/>
+<br/>
+
+<b>Save to CSV/Excel</b><br/>
+The <b>Save to CSV/Excel</b> feature exports your profiling results in a structured, tabular format that can be opened in any spreadsheet or text editor.  <br/>
+<br/>
+
+<b>Use Cases</b>:  <br/>
+- Sharing raw profiling data with team members who use tools like Python, R, or SQL for further analysis.  <br/>
+- Importing results into dashboards or business intelligence tools.  <br/>
+<br/>
+
+<b>3. Copy to Clipboard</b><br/>
+The <b>Copy to Clipboard</b> feature allows you to quickly copy specific results or sections from the dashboard.  <br/>
+<br/>
+
+<b>Use Cases</b>:  <br/>
+- Pasting data summaries into Google Docs, email, chat, or reports.<br/>
+- Quickly transferring insights to other tools without exporting a file.<br/>
+<br/><br/>
+
+<div class="text-center">
+	<b>Demonstration:</b><br/><br/>
+</div>
+
+
+For a complete demonstration of the HQ Data Profiler’s profile output and export features, check out our YouTube video.<br/><br/>
+
+
+<a href="https://www.youtube.com/watch?v=NqOhnNtfTgs" style="color: #741b47ff">🔗 [<b>Watch Now:</b> HQ Data Profiler - Understand Data Profiling Results]</a><br/><br/>
+
+In the video, we showcase:<br/>
+- Profiling a dataset.<br/>
+- Exploring the output metrics.<br/>
+- Using the <b>Save to CSV</b>, <b>Save to Excel</b>, and <b>Copy to Clipboard</b> features.<br/>
+
+<br/><br/>
+
+
+
+<div class="text-center">
+	<b>Why Choose HQ Data Profiler?</b><br/><br/>
+</div>
+
+The <b>HQ Data Profiler</b> is more than just a profiling tool — it’s an targeted solution to help you understanding your data in just seconds. Here’s why it stands out:  
+<br/><br/>
+
+1. <b>Versatile inputs</b>: Supports a variety of data types such as CSV, Excel, JSON, JSONL, Parquet, and XML.<br/>
+3. <b>Time-saving interface</b>: Profile and analyze your data in just 3 clicks<br/>
+2. <b>Flexible export options</b>: Save results in formats that suit your workflow, whether technical or non-technical.<br/>
+4. <b>Intuitive interface</b>: Accessible for professionals at all skill levels.<br/>
+<br/>
+Data profiling is a critical step in ensuring data quality, and the <b>HQ Data Profiler</b> makes it both easy and effective. From detailed output metrics to flexible export options, this tool empowers you to understand your data and act on the insights it provides.<br/><br/>
+
+
+Ready to take control of your data quality?<br/>
+- <b>Download HQ Data Profiler</b> today and try it on your datasets.<br/>
+- <b>Watch the YouTube demo</b> for a step-by-step guide.<br/>
+- <b>Contact us to share your experience.</b><br/>
+      </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="my-md-5 border-top">
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4">
+        <div class="mb-4">
+          <img class="mb-2" src="./logo.webp" alt="HQ Data Profiler logo" width="24" height="24">
+          <small class="d-block text-muted">© High Quality Profiling 2024</small>
+          <small class="link-secondary text-decoration-none mb-3">support@hqdataprofiler.com</small>
+        </div>
+
+	<ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="link-dark" href="https://www.youtube.com/@HQDataProfiler"><i class="bi-youtube"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="https://www.linkedin.com/company/hq-data-profiler/"><i class="bi-linkedin"></i></a>
+          </li>
+          <li class="ms-3">
+           <a class="link-dark" href="https://medium.com/@hqdataprofiler"><i class="bi-medium"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="https://x.com/HQDataProfiler"><i class="bi-twitter"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="https://www.threads.net/@hqdataprofiler"><i class="bi-threads"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="https://substack.com/@hqdataprofiler"><i class="bi-substack"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="https://www.peerspot.com/products/hq-data-profiler-reviews"><i class="bi-chat-left-text-fill"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="https://sourceforge.net/software/product/hq-data-profiler/"><i class="bi-sourceforge"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="https://www.producthunt.com/posts/hq-data-profiler/"><i class="bi-link-45deg"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="https://dataprofiler.org/"><i class="bi-link-45deg"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+ 
+
+
+
+
+  </div>
+
+</body>
+</html>
