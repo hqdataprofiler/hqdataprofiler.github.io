@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HQ Data Profiler data analysis and profiling tutorial (CSV/JSON/Excel/Other formats).">
+  <link rel="canonical" href="https://hqdataprofiler.com/tutorial-data-profiling-and-quality-analysis-for-json"/>
+  <title>Demo: Improving A Popular Kaggle Dataset - HQ Data Profiler</title>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Demo: Improving A Popular Kaggle Dataset",
+    "author": {
+      "@type": "Person",
+      "name": "HQ Data Profiler"
+    },
+    "articleBody": "See how <B>HQ Data Profiler</B> makes it easy to rapidly analyze and improve datasets."
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header class="mb-4 border-bottom">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a href="https://hqdataprofiler.com" class="navbar-brand d-flex align-items-center mb-md-0 me-md-auto text-dark text-decoration-none">
+          <img class="bi me-2" alt="Data Quality Analyzer and Data Profiler Tool logo" width="40" height="40" role="img" src="logo.webp"></img>
+          <span class="fs-4"><b>HQ</b> Data Profiler</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a type="button" href="https://hqdataprofiler.com/about-us" class="nav-link me-3" style="background-color: #ffffff; color: #741b47ff;">About us</a>
+            </li>
+            <li class="nav-item active">
+              <a type="button" href="https://hqdataprofiler.com/learn" class="nav-link me-3" style="background-color: #ffffff; color: #741b47ff;">Learn</a>
+            </li>
+            <li class="nav-item active">
+              <a type="button" href="https://hqdataprofiler.com/free-data-tools" class="nav-link me-3" style="background-color: #ffffff; color: #741b47ff;">Free tools</a>
+            </li>
+            <li class="nav-item active">
+              <a type="button" href="https://shop.hqdataprofiler.com/billing" class="nav-link me-3" style="background-color: #ffffff; color: #741b47ff;">Manage subscription</a>
+             </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <button class="btn me-2" style="background-color: #ffffff; color: #741b47ff; border-color: #741b47ff;" onclick="window.open('https://tool.hqdataprofiler.com','_blank')">Open HQ Data Profiler</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+
+
+
+
+    <header>
+      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+	      <h1 class="fw-normal">Demo: Improving A Popular Kaggle Dataset</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="text-center px-4 mb-2">
+
+	      See how <b>HQ Data Profiler</b> makes it easy to rapidly analyze and improve datasets:<br/><br/>
+      </div>
+      <div class="px-4 mb-2">
+
+
+	      The "Netflix Movies and TV Shows" dataset (<a href="https://www.kaggle.com/datasets/shivamb/netflix-shows" style="color: #741b47ff">https://www.kaggle.com/datasets/shivamb/netflix-shows</a>) is a popular Kaggle dataset with over 3M views and 674K downloads. It is a tabular dataset (CSV) that lists all movies and TV shows on Netflix. Fields in the dataset include "director", "title", "ratings", "release year", "duration", and more.<br/><br/>
+
+      </div>
+      <div class="text-center px-4 mb-2">
+	      Using <b>HQ Data Profiler</b>, data quality issues in the dataset were identified and addressed:</b><br/><br/>
+
+		  <img alt="HQ Data Profiler Kaggle Dataset Improvements" src="netflix_kaggle_analysis_with_hq_data_profiler.webp" class="mb-4 img-fluid border" loading="lazy"></img>
+
+		  <b>In particular</b>:<br/>
+      </div>
+      <div class="px-4 mb-2">
+
+	      <b>Rating field bad values:</b> The "rating" field is mostly populated with values such as "TV-MA", "PG-13", and other valid ratings. In the original dataset, bad values such as "66 min", "74 min", and "84 min" were also found as values for this field. These values were actually missing from the "duration" field, which was empty for the corresponding rows. Using HQ Data Profiler's outlier detection feature, these invalid values were easily detected and moved to their proper field.<br/><br/>
+	      <b>Director field misleading title:</b> The "director" field has many values containing comma separated names of multiple directors who worked on a show. This was easily detected again with HQ Data Profiler's outlier detection feature. The field was renamed to "directors".<br/><br/>
+	      <b>Country field misleading title:</b> The "country" field has many values listing multiple comma separated countries where a show was created. This was easily detected again with HQ Data Profiler's outlier detection feature. The field was renamed to "countries".<br/><br/>
+	      <b>Bad values:</b> The "cast" field had a value starting with a "'" character which was never closed and the "country" field had multiple values starting with a "," character. These were detected with HQ Data Profiler's comprehensive profile and fixed.<br/><br/>
+	      <b>Missing values:</b> HQ Data Profiler's comprehensive profile reveals 3 empty values in the "duration" field (fixed by moving the values from the "rating" field as described earlier), 4 empty values in the "rating" field, 10 empty values in the "date_added" field, 821 empty values in the "country" field, 825 empty values in the "cast" field, and 2634 empty values in the "director" field. The empty values in all field other than "duration" were not addressed.<br/><br/>
+
+	      <b>See for yourself:</b> Visit the improved dataset, published by HQ Data Profiler on Kaggle: <a href="https://www.kaggle.com/datasets/hqdataprofiler/cleaned-netflix-movies-and-tv-shows" style="color: #741b47ff">https://www.kaggle.com/datasets/hqdataprofiler/cleaned-netflix-movies-and-tv-shows</a>!<br/><br/>
+
+      </div>
+      <div class="text-center px-4 mb-2">
+	      Get started with HQ Data Profiler now! <b><a href="https://tool.hqdataprofiler.com/" style="color: #741b47ff">Analyze your own dataset for free, no sign up required.</a></b>.<br/>
+
+	      <br/>
+
+      </div>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="my-md-5 border-top">
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4">
+        <div class="mb-4">
+          <img class="mb-2" src="./logo.webp" alt="HQ Data Profiler logo" width="24" height="24">
+          <small class="d-block text-muted">© High Quality Profiling 2024</small>
+          <small class="link-secondary text-decoration-none mb-3">support@hqdataprofiler.com</small>
+        </div>
+
+	<ul class="nav col-md-4 justify-content-center list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="link-dark" href="https://www.youtube.com/@HQDataProfiler"><i class="bi-youtube"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="https://www.linkedin.com/company/hq-data-profiler/"><i class="bi-linkedin"></i></a>
+          </li>
+          <li class="ms-3">
+           <a class="link-dark" href="https://medium.com/@hqdataprofiler"><i class="bi-medium"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="https://x.com/HQDataProfiler"><i class="bi-twitter"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="https://www.threads.net/@hqdataprofiler"><i class="bi-threads"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="https://substack.com/@hqdataprofiler"><i class="bi-substack"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="https://www.peerspot.com/products/hq-data-profiler-reviews"><i class="bi-chat-left-text-fill"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="https://sourceforge.net/software/product/hq-data-profiler/"><i class="bi-sourceforge"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="https://www.producthunt.com/posts/hq-data-profiler/"><i class="bi-link-45deg"></i></a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="https://dataprofiler.org/"><i class="bi-link-45deg"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+ 
+
+
+
+  </div>
+
+</body>
+</html>
